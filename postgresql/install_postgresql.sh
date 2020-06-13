@@ -2,7 +2,7 @@
 
 #initial variable, for possible parametrization later
 DATA_LOC="/usr/local/pgsql/data"
-BIN_LOC="/usr/lib/postgresql/9.5/bin"
+BIN_LOC="/usr/lib/postgresql/9.6/bin"
 LOG_LOC="/var/log/postgresql"
 
 #get extract location from arguments
@@ -46,7 +46,7 @@ fi
 echo "Install postgresql and pljava"
 echo "Fetching installation media from $SRC_LOC"
 
-sudo apt install -y postgresql-9.5 postgresql-9.5-pljava
+sudo apt install -y postgresql-9.6 postgresql-9.6-pljava
 
 #get user from script
 DB_USER="$(grep -oP '.*USER \K(.*)(?= PASSWORD.*)' $SRC_LOC/scripts/SetupDBandUser.sql)"
