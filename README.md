@@ -41,7 +41,7 @@ The whole installation takes around 10-15mins. But this will vary from machine t
 cd /tmp
 
 #Download project
-wget https://github.com/kannan-raveendran-nair/prpc-pe-linux/archive/master.zip -O prpc-pe-linux-master.zip
+wget https://github.com/xiaocids/prpc-pe-linux/archive/master.zip -O prpc-pe-linux-master.zip
 
 #Extract zip to folder
 sudo apt install -y unzip         #Install uznip utility
