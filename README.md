@@ -58,7 +58,7 @@ cd prpc-pe-linux-master
 #substitute /path/to/115148_PE_721.zip with full file path downloaded in Prerequisites/Files
 bash prpc_pe.sh \
  --install-pega \
- --installation-media=/path/to/115148_PE_721.zip
+ --installation-media=/tmp/116502_PE8.3.0.zip
 ```
 
 At the end of installation both tomcat & postgresql servers are automatically started.
