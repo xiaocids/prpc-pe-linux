@@ -17,15 +17,15 @@ sudo useradd -s /bin/false -g tomcat -d "$DEST_LOC" tomcat
 #download tomcat files to /tmp
 echo 'Download & Install tomcat.. '
 #cd /tmp
-if [[ -f /tmp/apache-tomcat-9.0.36.tar.gz ]]; then
-  echo "Skipping download of apache-tomcat-9.0.17.tar.gz"
+if [[ -f /tmp/apache-tomcat-9.0.39.tar.gz ]]; then
+  echo "Skipping download of apache-tomcat-9.0.39.tar.gz"
 else
-  wget -O /tmp/apache-tomcat-9.0.36.tar.gz https://downloads.apache.org/tomcat/tomcat-9/v9.0.36/bin/apache-tomcat-9.0.36.tar.gz
+  wget -O /tmp/apache-tomcat-9.0.39.tar.gz https://downloads.apache.org/tomcat/tomcat-9/v9.0.39/bin/apache-tomcat-9.0.39.tar.gz
 fi
 # extract the contents
 rm -rf "$DEST_LOC"
 mkdir "$DEST_LOC"
-sudo tar xzvf /tmp/apache-tomcat-9.0.36.tar.gz -C /opt/tomcat --strip-components=1
+sudo tar xzvf /tmp/apache-tomcat-9.0.39.tar.gz -C /opt/tomcat --strip-components=1
 
 #install
 echo 'Setup usergroup and user'
